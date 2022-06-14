@@ -161,63 +161,13 @@ aside .top i {
     font-size: 1.5rem;
 }
 
-/*==ACTIVE==*/
-aside.active .top #close-btn {
-    display: none;
-}
-
-aside.active .top .logo {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-aside.active .logo {
-    background: var(--color-yelow);
-    width: 7vw;
-    display: flex;
-    position: relative;
-    align-items: center;
-    
-}
-
 aside .logo i {
     font-size: 2.5rem;
-}
-
-/*==ACTIVE==*/
-aside.active .logo i {
-    font-size: 3rem;
-    margin-left: 0.8rem;
-    color: var(--color-blue1);
-    border-radius: 2rem;
-    padding: 0.3rem;
-    width: 50px;
-    height: 50px;
-    background: var(--color-white);
 }
 
 aside .logo h2 {
     font-size: 1rem;
     margin-top: 1.3rem;
-}
-
-/*==ACTIVE==*/
-aside.active .logo h2 {
-    display: none;
-}
-
-
-aside.active .sidebar .tooltip {
-    /*background: var(--color-blue1);
-    color: var(--color-white);
-    padding: 1.3rem;
-    height: 2rem;
-    border-radius: 2rem;
-    width: 100px;
-    margin-left: 8rem;
-    margin-top: 0;*/
-    display: none;
 }
 
 aside .sidebar .tooltip {
@@ -236,20 +186,6 @@ aside .sidebar {
     top: 3rem;
 }
 
-/*==ACTIVE==*/
-aside.active .sidebar a h3 {
-    display: none;
-}
-
-aside.active .sidebar a i {
-    
-    transition: all 300ms ease;
-}
-
-aside.active .sidebar a:hover i {
-    margin-right: 2rem;
-}
-
 aside h3 {
     font-weight: 500;
 }
@@ -262,58 +198,18 @@ aside .sidebar a {
     align-items: center;
     position: relative;
     height: 3.7rem;
-    transition: all 300ms ease;
-}
-
-aside.active .sidebar a {
-    display: flex;
-    color: var(--color-white);
-    margin: 1rem;
-    gap: 1rem;
-    align-items: center;
-    position: relative;
-    height: 3.7rem;
-    transition: all 300ms ease;
 }
 
 aside .sidebar a i {
     font-size: 1.6rem;
-    transition: all 300ms ease;
 }
 
-aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
+aside .sidebar a:hover  {
     width: 100%;
-}
-
-aside.active .sidebar a:last-child {
-    position: absolute;
-    bottom: 1rem;
-    width: 100%;
-}
-
-aside .sidebar a.active {
-    width: 100%;
-    background: #F1F1F1;
+    background: white;
     color: var(--color-blue1);
-    margin-left: 0;
-    
-}
-
-aside .sidebar a.active:before{
-    content: '';
-    width: 6px;
-    height: 100%;
-    background: var(--color-yelow);
-}
-
-aside .side a:hover {
-    color: var(--color-yelow);
-}
-
-aside .sidebar a:hover i {
-    margin-left: 1rem;
+    padding-left: 2rem;
+    transition: all 600ms linear;
 }
 
 /* ========== MAIN INSIGHTS ============ */
@@ -552,6 +448,7 @@ main .menu i {
 
 main .recent-request {
     margin-top: 1.5rem;
+    margin-right: 2rem;
 }
 
 main .recent-request h2 {
