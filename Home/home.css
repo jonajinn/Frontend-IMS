@@ -124,14 +124,24 @@ aside {
 aside.active {
     height: 90vh;
     background: var(--color-blue1);
+    
     width: 7vw;
 }
 
 aside .top {
     display: flex;
     align-items: center;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
     color: var(--color-white);
+    position: relative;
+}
+
+aside.active .top {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: var(--color-white);
+    position: relative;
 }
 
 aside .logo {
@@ -145,15 +155,30 @@ aside .color {
 }
 
 
-
 aside .top i {
     color: white;
     margin: 0.5rem;
     font-size: 1.5rem;
 }
+
 /*==ACTIVE==*/
 aside.active .top #close-btn {
     display: none;
+}
+
+aside.active .top .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+aside.active .logo {
+    background: var(--color-yelow);
+    width: 7vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    
 }
 
 aside .logo i {
@@ -163,7 +188,7 @@ aside .logo i {
 /*==ACTIVE==*/
 aside.active .logo i {
     font-size: 3rem;
-    margin-left: 1.5rem;
+    margin-left: 0.8rem;
     color: var(--color-blue1);
     border-radius: 2rem;
     padding: 0.3rem;
@@ -195,12 +220,17 @@ aside.active .sidebar .tooltip {
     display: none;
 }
 
+aside .sidebar .tooltip {
+    display: none;
+}
+
 /* ==================SIDEBAR================== */
 
 aside .sidebar {
     background: var(--color-blue1);
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100vh;
     position: relative;
     top: 3rem;
@@ -212,12 +242,12 @@ aside.active .sidebar a h3 {
 }
 
 aside.active .sidebar a i {
-    margin-left: 1rem;
+    
     transition: all 300ms ease;
 }
 
 aside.active .sidebar a:hover i {
-    margin-left: 0;
+    margin-right: 2rem;
 }
 
 aside h3 {
@@ -235,6 +265,17 @@ aside .sidebar a {
     transition: all 300ms ease;
 }
 
+aside.active .sidebar a {
+    display: flex;
+    color: var(--color-white);
+    margin: 1rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
 aside .sidebar a i {
     font-size: 1.6rem;
     transition: all 300ms ease;
@@ -242,7 +283,7 @@ aside .sidebar a i {
 
 aside .sidebar a:last-child {
     position: absolute;
-    bottom: 1rem;
+    bottom: 2rem;
     width: 100%;
 }
 
@@ -257,6 +298,7 @@ aside .sidebar a.active {
     background: #F1F1F1;
     color: var(--color-blue1);
     margin-left: 0;
+    
 }
 
 aside .sidebar a.active:before{
