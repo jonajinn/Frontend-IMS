@@ -120,23 +120,8 @@ aside {
     background: var(--color-blue1);
 }
 
-/*==ACTIVE==*/
-aside.active {
-    height: 90vh;
-    background: var(--color-blue1);
-    
-    width: 7vw;
-}
 
 aside .top {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem;
-    color: var(--color-white);
-    position: relative;
-}
-
-aside.active .top {
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -209,7 +194,7 @@ aside .sidebar a:hover  {
     background: white;
     color: var(--color-blue1);
     padding-left: 2rem;
-    transition: all 600ms linear;
+    transition: 600ms ease-out ;
 }
 
 /* ========== MAIN INSIGHTS ============ */
