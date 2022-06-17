@@ -194,3 +194,53 @@ aside .sidebar a i {
     font-size: 1.6rem;
 }
 
+
+/*==============================================================================*/
+
+/* TOP MENU */
+main .top-menu {
+    background: var(--color-blue2);
+    height: 10%;
+    width: 100vw;
+    margin-left: -1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+main .logo-ccc img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+main .logo-ccc {
+    display: flex;
+    margin-left: 1rem;
+}
+
+main .profile {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    text-align: center;
+}
+
+main .picture img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+main .info {
+    margin-top: 0.5rem;
+}
+
+main .ccc-text {
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+main .menu {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
