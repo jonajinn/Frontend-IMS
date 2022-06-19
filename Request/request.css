@@ -297,13 +297,15 @@ main .form {
     position: absolute;
 }
 
+
 /*REQUEST TITLE*/
 main .title {
     background: var(--color-blue1);
     border-radius: 0.5rem;
     width: 35%;
     height: 5%;
-    
+    margin-top: 0.5rem;
+    margin-left: 1rem;
     padding: 0.1rem;
     color: white;
 }
@@ -315,10 +317,9 @@ main .title h3 {
 }
 
 main .input {
-    margin-top: 1rem;
     margin-left: 2rem;
     position: absolute;
-    line-height: 4rem;
+    line-height: 3rem;
     align-items: center;
     width: 75%;
     height: 70%;
@@ -353,13 +354,13 @@ main .fixed-asset {
 /*REASON*/
 main .reason {
     display: flex;
+    gap: 1rem;
 }
 
 main .reason input {
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     width: 80%;
-    height: 30%;
-    position: absolute;
+    height: 50%;
     align-self: center;
     right: 0;
 
@@ -421,8 +422,6 @@ main .card {
 
 }
 
-
-
 main .card button {
     background: var(--color-blue1);
     font-size: 1.5rem;
@@ -438,6 +437,7 @@ main .card button:hover{
     font-size: 1rem;
 }
 
+/*AVAILABLE QUANTITY*/
 main .available {
     display: flex;
     position: absolute;
