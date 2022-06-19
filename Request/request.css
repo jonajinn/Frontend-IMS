@@ -389,13 +389,15 @@ main .item {
     gap: 0.8rem;
 }
 
-main .item #btn {
+main .item button {
     background: var(--color-blue1);
     width: 15%;
     display: absolute;
     height: 20%;
     color: white;
     border-radius: 0.5rem;
+    margin-top: 1rem;
+    
 }
 
 main .box {
@@ -407,6 +409,7 @@ main .box {
     height: 120%;
     margin-top: 1rem;
 }
+
 
 /*QUANTITY*/
 
