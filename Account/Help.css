@@ -293,6 +293,8 @@ main .main-body .side-acc a {
     display: flex;
     align-items: center;
     gap: 1rem;
+    line-height: 5rem;
+    font-size: 2rem;
 }
 
 main .main-body .side-acc i {
@@ -312,53 +314,40 @@ main .main-body .main-acc {
     height: 60vh;
     border-radius: 2rem;
     padding: 3rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     margin-left: 1rem;
     box-shadow: var(--box-shadow);
 }
 
-main .main-acc .name {
-    display: flex;
+main .main-acc .report {
     gap: 4rem;
-    line-height: 1.5rem;
+    line-height: 3rem;
     margin-top: 2rem;
 }
 
-main .main-acc .acc-prof {
-    display: flex;
-    gap: 4rem;
-    line-height: 1.5rem;
-    margin-top: 2.5rem;
-}
 
 main .main-acc input {
     border-radius: 0.5rem;
-    height: 4vh;
-    padding: 1rem;
-}
-
-/*PROFILE PICTURE*/
-main .main-acc .profile-pic {
-    display: flex;
-    gap: 1rem;
-}
-
-main .main-acc .img-box {
-    background: white;
-    width: 5vw;
     height: 10vh;
-    border-radius: 1rem;
-}
-
-main .main-acc .img-box i {
+    width: 32vw;
     padding: 1rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-main .main-acc .upload {
-    padding: 0.5rem;
+main .main-acc h2 {
+    background-position: center;
+    background: var(--color-blue1);
+    color: white;
+    font-weight: 500;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    width: 7vw;
+    height: 5vh;
 }
 
+
+/*BUTTON*/
 main .main-acc button {
     background: var(--color-blue1);
     color: white;
