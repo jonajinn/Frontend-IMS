@@ -245,3 +245,125 @@ main .menu {
     margin-left: 1rem;
 }
 
+/*====================================================*/
+
+/*MAIN BODY TITLE*/
+main .main-body .titlee {
+    background: var(--color-blue1);
+    color: white;
+    margin: 1rem;
+    width: 30vw;
+    height: 15vh;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    
+    
+}
+
+main .main-body .titlee .text{
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+main .titlee h1,h3 {
+    font-weight: 500;
+}
+
+/*ACCOUNT SETTINGS*/
+main .account {
+    display: flex;
+}
+
+/*SIDE-ACCOUNT*/
+main .main-body .side-acc {
+    background: var(--color-grey);
+    width: 15vw;
+    height: 60vh;
+    border-radius: 2rem;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    line-height: 3.5rem;
+    margin-left: 1rem;
+}
+
+main .main-body .side-acc a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .main-body .side-acc i {
+    color: var(--color-blue1);
+}
+
+main .main-body .side-acc a:hover {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*MAIN - ACCOUNT*/
+main .main-body .main-acc {
+    background: var(--color-grey);
+    width: 40vw;
+    height: 60vh;
+    border-radius: 2rem;
+    padding: 3rem;
+    line-height: 2.5rem;
+    margin-left: 1rem;
+}
+
+main .main-acc .name {
+    display: flex;
+    gap: 4rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+main .main-acc .acc-prof {
+    display: flex;
+    gap: 4rem;
+    line-height: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+main .main-acc input {
+    border-radius: 0.5rem;
+    height: 4vh;
+    padding: 1rem;
+}
+
+/*PROFILE PICTURE*/
+main .main-acc .profile-pic {
+    display: flex;
+    gap: 1rem;
+}
+
+main .main-acc .img-box {
+    background: white;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 1rem;
+}
+
+main .main-acc .img-box i {
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+main .main-acc .upload {
+    padding: 0.5rem;
+}
+
+main .main-acc button {
+    background: var(--color-blue1);
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+
+
