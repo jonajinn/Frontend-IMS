@@ -136,7 +136,7 @@ main .date input[type="date"] {
     color: black;
 }
 
-main .insights {
+.insights {
     display: flex;
     grid-template-columns: repeat(4, 4fr);
     gap: 1rem;
