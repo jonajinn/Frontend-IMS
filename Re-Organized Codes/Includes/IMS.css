@@ -105,6 +105,21 @@ b {
     color: var(--color-declined);
 }
 
+button {
+    background: var(--color-blue1);
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    box-shadow: var(--box-shadow);
+}
+
+button:hover {
+    background: var(--color-blue2);
+    font-size: smaller;
+}
+
 /*END OF THE GENERAL FORMAT*/
 
 
