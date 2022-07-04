@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+    <!--TITLE-->
+    <title>Inventory Management System</title>
+
+    <!--BOXICON USAGE LINK AS A FONT-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="IMS.css">
+    </head>
+
+    <!--SCRIPT FOR INCLUDES-->
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+          
+          /* Loop through a collection of all HTML elements: */
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+              
+                /* Make an HTTP request using the attribute value as the file name: */
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                  
+                  /* Remove the attribute, and call this function once more: */
+                  elmnt.removeAttribute("w3-include-html");
+                  includeHTML();
+                }
+              }
+              xhttp.open("GET", file, true);
+              xhttp.send();
+
+              /* Exit the function: */
+              return;
+            }
+          }
+        }
+        </script>
+
+    <body>
+      <div class="container">
+        <aside>
+            <div w3-include-html="Sidebar.html"></div>
+        </aside>
+        <main>
+            <div w3-include-html="Topbar.html"></div>
+            
+            
+            <div class="main-body">
+                 <!--TITLE-->
+                <div class="titlee">
+                <span class="text"><h1>Account Settings</h1>
+                <h3>Change your profile and account settings</h3></span>
+                </div>
+
+                <!--ACCOUNT-->    
+                <div class="account">
+                  <div w3-include-html="Sideaccount.html"></div>
+                  <div w3-include-html="help-acc.html"></div>
+                </div>
+                
+            </div>
+            
+            
+            </main>
+      </div>  
+        <script>
+            includeHTML();
+        </script>
+
+    </body>
+</html>

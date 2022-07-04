@@ -1,0 +1,59 @@
+<!--HEADER-->
+<div class="header">
+    <span class="header-text"><h1>Request your Items!</h2><h3>Choose what you really need</h3></span>
+    <img src="person.png" alt="person">
+</div>
+
+<div class="form">
+    <!--REQUEST FORM-->
+    <div class="request">
+        <div class="title">
+            <h3>Fill up the form and select item/s</h3>
+        </div>
+
+        <div class="input">
+            <div class="type">
+                <h3>Type of Request:</h3>
+                <button><img src="Consumable.png" alt="Consumable"><h3>Consumable</h3></button>
+                <button><img src="Fixed Item.png" alt="Fixed Asset"><h3>Fixed Asset</h3></button>
+            </div>
+
+
+            <div class="reason">
+                <h3>Reason:</h3>
+                <input type="text">
+            </div>
+
+            <div class="item">
+                <h3>Item name:</h3>
+                <input type="text">
+                <button>Submit</button>
+            </div>
+
+            <div class="quantity">
+
+                <!--QUANTITY BAR-->
+                <h3>Quantity:</h3>
+                 <div class="card">
+                    
+                    <button onclick="decrement()">-</button>
+                    <h2 id="root">0</h2>
+                    <button onclick="increment()">+</button>
+                 </div>
+                
+                 <!--AVAILABLE QUANTITY-->
+                 <div class="available">
+                    <h3>Available Quantity: </h3>
+                    <div class="inside"><h3>1</h3></div>
+                    
+                 </div>
+            </div>
+            
+            
+
+    </div>
+</div>
+<div class="box">
+    <img src="Boxs.png" alt="Boxes">
+</div>
+</div>    

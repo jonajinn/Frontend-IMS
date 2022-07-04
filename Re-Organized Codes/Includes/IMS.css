@@ -105,25 +105,156 @@ b {
     color: var(--color-declined);
 }
 
-button {
+
+/*  CONTAINER */
+.container {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+
+}
+
+/* ASIDE */
+aside {
+    height: 100vh; /*ASIDE HEIGHT SIZE*/
     background: var(--color-blue1);
-    color: white;
-    width: 5vw;
-    height: 4vh;
-    border-radius: 0.5rem;
-    font-size: 0.8rem;
-    box-shadow: var(--box-shadow);
 }
 
-button:hover {
-    background: var(--color-blue2);
-    font-size: smaller;
+/* TOP */
+aside .top {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: var(--color-white);
+    position: relative;
+    gap: 1rem;
 }
 
+/* LOGO */
+aside .logo {
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* LOGO ICON */
+aside .logo i {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/* CHANGING LOGO FONT COLOR*/
+aside .logo .h1 {
+    color: black;
+    line-height: 1.5rem;
+}
 /*END OF THE GENERAL FORMAT*/
 
+/*===================================== ASIDE =======================================*/
+/*===================================== SIDEBAR =======================================*/
 
-/*===================================== DASHBOARD =======================================*/
+/* SIBEBAR */
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+/* FONT THICKNESS FOR THE SIDEBAR*/
+aside h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: var(--color-white);
+    align-items: center;
+    height: 4rem;
+    gap: 1rem;
+}
+
+aside .sidebar a:last-child {
+    margin-top: 50vh; /*Logout position depends on this*/
+}
+
+
+ aside .sidebar a:hover {
+    background: var(--color-white);
+    color: var(--color-blue1);
+    width: 100%;
+    padding-left: 3rem;
+    transition: all 300ms ease;
+ }
+
+
+
+/* ICON SIZE*/
+aside .sidebar a i {
+    font-size: 1.6rem;
+}
+/*===================================== MAIN =======================================*/
+
+
+/*===================================== TOP BAR =======================================*/
+
+/* TOP MENU */
+main .top-menu {
+    background: var(--color-blue2);
+    height: 10vh;
+    width: 100vw;
+    margin-left: -1.8rem;
+    display: flex;
+    margin-top: -1.5rem; /*This removes the margin top you can adjust it if there's a gap*/
+    align-items: center;
+}
+
+main .logo-ccc img {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+main .logo-ccc {
+    display: flex;
+    margin-left: 1rem;
+}
+
+main .profile {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    text-align: center;
+}
+
+main .picture img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+}
+
+main .info {
+    margin-top: 0.5rem;
+}
+
+main .ccc-text {
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+main .menu {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+/*===================================== CONTENT =======================================*/
+
+/*===================== HOME USER ===========================*/
+
+/*=================== DASHBOARD ==================*/
 
 /* ========== MAIN INSIGHTS ============ */
 
@@ -253,7 +384,7 @@ main .insights svg circle {
 }
 
 
-/* =============== CIRCLE PERCENTAGE ======================*/
+/* ========== CIRCLE PERCENTAGE ============ */
 
 main .insights .request svg circle {
     stroke-dashoffset: -30 ;
@@ -295,7 +426,20 @@ main .insights small {
 
 /*===================================== TABLE =======================================*/
 /* ========== MAIN RECENT REQUESTS ============ */
+main .recent-request button {
+    background: var(--color-blue1);
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    box-shadow: var(--box-shadow);
+}
 
+main .recent-request button:hover {
+    background: var(--color-blue2);
+    font-size: smaller;
+}
 main .recent-request {
     margin-top: 1.5rem;
     margin-right: 2rem;
@@ -335,3 +479,343 @@ main .recent-request a {
     margin: 1rem auto;
     color: var(--color-grey);
 }
+
+
+
+/*===================== HOME USER ===========================*/
+
+/*=================== REQUEST FORM ==================*/
+/*REQUEST HEADER*/
+main .header {
+    background: var(--color-blue2);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    box-shadow: var(--box-shadow);
+}
+
+main .header-text {
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.3rem;
+    margin-left: 4rem;
+    
+}
+main .header-text h1 {
+    font-weight: 500;
+}
+
+main .header-text h3 {
+    font-weight: 300;
+}
+
+main .header img {
+    width: 25%;
+    height: auto;
+    margin-bottom: 2.5rem;
+    position: absolute;
+    right: 2rem;
+}
+
+/*REQUEST FORM*/
+
+main .form {
+    background: var(#a3a3a3);
+    width: 40%;
+    height: 50%;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-top: 14rem;
+    box-shadow: var(--box-shadow);
+    border: 0.5rem;
+    position: absolute;
+}
+
+
+/*REQUEST TITLE*/
+main .title {
+    background: var(--color-blue1);
+    border-radius: 0.5rem;
+    width: 35%;
+    height: 5%;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    padding: 0.1rem;
+    color: white;
+}
+
+main .title h3 {
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+    font-weight: 500;
+}
+
+main .input {
+    margin-left: 2rem;
+    position: absolute;
+    line-height: 3rem;
+    align-items: center;
+    width: 75%;
+    height: 70%;
+    padding: 0.5rem;
+}
+
+/*TYPE OF REQUEST*/
+main .type {
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+main .type img {
+    width:3rem;
+    margin-left: 0.2rem;
+}
+
+main .type h3 {
+    margin-right: 1rem;
+}
+
+main .consumable {
+    line-height: 1rem;
+    margin: 1rem;
+    padding-left: 1rem ;
+}
+
+main .fixed-asset {
+    line-height: 1rem;
+}
+
+/*REASON*/
+main .reason {
+    display: flex;
+    gap: 1rem;
+}
+
+main .reason input {
+    border-radius: 0.2rem;
+    width: 80%;
+    height: 50%;
+    align-self: center;
+    right: 0;
+
+    
+}
+
+
+/*ITEM NAME*/
+main .item {
+    display: flex;
+    gap: 0.5rem;
+}
+
+
+main .item input {
+    border-radius: 0.2rem;
+    width: 65%;
+    height: 10%;
+    align-self: center;
+    
+}
+
+/*SUBMIT BUTTON*/
+
+main .item {
+    gap: 0.8rem;
+}
+
+main .item button {
+    background: var(--color-blue1);
+    width: 15%;
+    display: absolute;
+    height: 20%;
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    
+}
+
+main .box {
+    display: flex;
+    position: absolute;
+    left: 110%;
+    bottom: 0rem;
+    width: 120%;
+    height: 120%;
+    margin-top: 1rem;
+}
+
+
+/*QUANTITY*/
+
+main .quantity {
+    display: flex;
+    gap: 1rem;
+}
+
+main .card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+main .card button {
+    background: var(--color-blue1);
+    font-size: 1.5rem;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    color: white;
+}
+
+main .card button:hover{
+    background: var(--color-blue2);
+    font-size: 1rem;
+}
+
+/*AVAILABLE QUANTITY*/
+main .available {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    gap: 1rem;
+}
+
+
+/*===================================================*/
+/*MAIN BODY TITLE*/
+main .main-body .titlee {
+    background: var(--color-blue2);
+    color: white;
+    margin: 1rem;
+    width: 30vw;
+    height: 15vh;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    
+    
+}
+
+main .main-body .titlee .text{
+    position: absolute;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+main .titlee h1,h3 {
+    font-weight: 500;
+}
+
+/*ACCOUNT SETTINGS*/
+main .account {
+    display: flex;
+}
+
+/*SIDE-ACCOUNT*/
+main .main-body .side-acc {
+    background: var(#F1F1F1);
+    width: 15vw;
+    height: 60vh;
+    border-radius: 2rem;
+    padding-top: 5rem;
+    padding-left: 4rem;
+    line-height: 3.5rem;
+    margin-left: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .main-body .side-acc a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+
+main .main-body .side-acc i {
+    color: var(--color-blue1);
+}
+
+main .main-body .side-acc a:hover {
+    color: black;
+    font-size: 1.5rem;
+}
+
+
+/*MAIN - ACCOUNT*/
+main .main-body .main-acc {
+    background: var(#F1F1F1);
+    width: 40vw;
+    height: 60vh;
+    border-radius: 2rem;
+    padding: 3rem;
+    line-height: 2.5rem;
+    margin-left: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .main-acc .name {
+    display: flex;
+    gap: 4rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+}
+
+main .main-acc .acc-prof {
+    display: flex;
+    gap: 4rem;
+    line-height: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+main .main-acc input {
+    border-radius: 0.5rem;
+    height: 4vh;
+    padding: 1rem;
+}
+
+/*PROFILE PICTURE*/
+main .main-acc .profile-pic {
+    display: flex;
+    gap: 1rem;
+}
+
+main .main-acc .img-box {
+    background: white;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 1rem;
+}
+
+main .main-acc .img-box i {
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+main .main-acc .upload {
+    padding: 0.5rem;
+}
+
+main .main-acc button {
+    background: var(--color-blue1);
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .main-acc button:hover {
+    background: var(--color-blue2);
+    font-size: smaller;
+}
+
+
+
