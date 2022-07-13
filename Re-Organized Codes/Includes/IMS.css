@@ -178,7 +178,7 @@ aside .sidebar a {
 }
 
 aside .sidebar a:last-child {
-    margin-top: 50vh; /*Logout position depends on this*/
+    margin-top: 35vh; /*Logout position depends on this*/
 }
 
 
